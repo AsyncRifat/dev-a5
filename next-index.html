@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css">
+  <style>
+    .poppins-font {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body class="poppins-font container w-10/12 justify-self-center bg-slate-200 drop-shadow-md">
+  <section>
+    <div class="flex justify-between bg-slate-100 mt-8 h rounded-xl drop-shadow-lg">
+      <div class="flex items-center py-4">
+        <img class="w-8 h-8 ml-5" src="./assets/logo.png" alt="">
+        <h1 class="pl-2 font-extralight">Dev<span class="font-semibold">Board</span></h1>
+      </div>
+      <div id="home-back" class="flex justify-between gap-9 p-4 ">
+        <button class="bg-blue-600 px-3 py-2 rounded-lg text-white cursor-pointer">Back to Desk</button>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="justify-self-center my-6">
+      <h class="font-bold text-2xl">Blogs</h1>
+    </div>
+    <div class="">
+      <div class=" bg-slate-100  rounded-md mb-5">
+        <p class="discover p-5 text-lg font-semibold">Question-1: What are the different ways to select an element in
+          the DOM?
+        </p>
+        <p class="p-5 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo adipisci
+          necessitatibus,
+          aspernatur porro ratione
+          molestiae nobis cupiditate beatae voluptate animi sequi aliquid veniam rerum. Aliquid error at porro, ad esse
+          vitae temporibus. Quisquam unde animi, voluptates cum laudantium cumque quae!</p>
+      </div>
+      <div class="bg-slate-100  rounded-md mb-5">
+        <p class="discover p-5 text-lg font-semibold">Question-2: What is the difference between innerHTML, innerText,
+          and textContent ?
+        </p>
+        <p class="p-5 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo adipisci
+          necessitatibus,
+          aspernatur porro ratione
+          molestiae nobis cupiditate beatae voluptate animi sequi aliquid veniam rerum. Aliquid error at porro, ad esse
+          vitae temporibus. Quisquam unde animi, voluptates cum laudantium cumque quae!</p>
+      </div>
+      <div class="bg-slate-100  rounded-md mb-5">
+        <p class="discover p-5 text-lg font-semibold">Question-3: What is event delegation in the DOM?
+        </p>
+        <p class="p-5 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo adipisci
+          necessitatibus,
+          aspernatur porro ratione
+          molestiae nobis cupiditate beatae voluptate animi sequi aliquid veniam rerum. Aliquid error at porro, ad esse
+          vitae temporibus. Quisquam unde animi, voluptates cum laudantium cumque quae!</p>
+      </div>
+      <div class="bg-slate-100  rounded-md mb-5">
+        <p class="discover p-5 text-lg font-semibold">Question-4: What is event bubbling in the DOM?
+        </p>
+        <p class="p-5 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo adipisci
+          necessitatibus,
+          aspernatur porro ratione
+          molestiae nobis cupiditate beatae voluptate animi sequi aliquid veniam rerum. Aliquid error at porro, ad esse
+          vitae temporibus. Quisquam unde animi, voluptates cum laudantium cumque quae!</p>
+      </div>
+      <div class="bg-slate-100  rounded-md mb-5">
+        <p class="discover p-5 text-lg font-semibold">Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </p>
+        <p class="p-5 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo adipisci
+          necessitatibus,
+          aspernatur porro ratione
+          molestiae nobis cupiditate beatae voluptate animi sequi aliquid veniam rerum. Aliquid error at porro, ad esse
+          vitae temporibus. Quisquam unde animi, voluptates cum laudantium cumque quae!</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('home-back').addEventListener('click', function () {
+      window.location.href = './index.html';
+    })
+  </script>
+</body>
+
+</html>

@@ -20,9 +20,9 @@
   </style>
 </head>
 
-<body class="poppins-font container w-10/12 justify-self-center bg-slate-200 drop-shadow-lg">
+<body class="poppins-font container w-10/12 justify-self-center bg-slate-200 drop-shadow-md">
   <header>
-    <div class="flex justify-between bg-slate-100 mt-8 h rounded-xl ">
+    <div class="flex justify-between bg-slate-100 mt-8 h rounded-xl drop-shadow-lg">
       <div class="flex items-center py-4">
         <img class="w-8 h-8 ml-5" src="./assets/logo.png" alt="">
         <h1 class="pl-2 font-extralight">Dev<span class="font-semibold">Board</span></h1>
@@ -32,8 +32,8 @@
           <img class=" w-5 h-5 " src="./assets/checkbox.png" alt="">
           <h3 class="font-semibold">23</h3>
         </div>
-        <div class="flex justify-center items-center bg-slate-200 rounded-xl px-2 mr-2">
-          <img class="w-6 h-6 object-cover" src="./assets/theme-btn.png" alt="">
+        <div onclick="makeColor" id="color-btn" class="flex justify-center items-center bg-slate-200 rounded-xl px-2 mr-2">
+          <img class="w-6 h-6 object-cover cursor-pointer" src="./assets/theme-btn.png" alt="">
         </div>
       </div>
     </div>
@@ -51,8 +51,8 @@
               <h2 class="text-xl font-semibold">05</h2>
             </div>
           </div>
-          <div
-            class="flex bg-linear-to-r from-blue-700 to-blue-400 w-auto rounded-lg justify-center items-center gap-4">
+          <div id="question-task"
+            class="flex bg-linear-to-r from-blue-700 to-blue-400 w-auto rounded-lg justify-center items-center gap-4 cursor-pointer">
             <div class="pl-7">
               <img src="./assets/board.png" alt="">
             </div>
@@ -85,7 +85,7 @@
                 <h4 class="font-light text-xs">Deadline</h4>
                 <p>21 March 2025</p>
               </div>
-              <button class="bg-blue-500 px-4 rounded-lg text-white">Completed</button>
+              <button class="bg-blue-500 px-4 rounded-lg text-white cursor-pointer">Completed</button>
             </div>
           </div>
           <div class="bg-slate-200 rounded-lg">
@@ -107,7 +107,7 @@
                 <h4 class="font-light text-xs">Deadline</h4>
                 <p>21 March 2025</p>
               </div>
-              <button class="bg-blue-500 px-4 rounded-lg text-white">Completed</button>
+              <button class="bg-blue-500 px-4 rounded-lg text-white cursor-pointer">Completed</button>
             </div>
           </div>
           <div class="bg-slate-200 rounded-lg">
@@ -131,7 +131,7 @@
                 <h4 class="font-light text-xs">Deadline</h4>
                 <p>21 March 2025</p>
               </div>
-              <button class="bg-blue-500 px-4 rounded-lg text-white">Completed</button>
+              <button class="bg-blue-500 px-4 rounded-lg text-white cursor-pointer">Completed</button>
             </div>
           </div>
           <div class="bg-slate-200 rounded-lg">
@@ -155,7 +155,7 @@
                 <h4 class="font-light text-xs">Deadline</h4>
                 <p>21 March 2025</p>
               </div>
-              <button class="bg-blue-500 px-4 rounded-lg text-white">Completed</button>
+              <button class="bg-blue-500 px-4 rounded-lg text-white cursor-pointer">Completed</button>
             </div>
           </div>
           <div class="bg-slate-200 rounded-lg">
@@ -177,7 +177,7 @@
                 <h4 class="font-light text-xs">Deadline</h4>
                 <p>21 March 2025</p>
               </div>
-              <button class="bg-blue-500 px-4 rounded-lg text-white">Completed</button>
+              <button class="bg-blue-500 px-4 rounded-lg text-white cursor-pointer">Completed</button>
             </div>
           </div>
           <div class="bg-slate-200 rounded-lg">
@@ -199,20 +199,20 @@
                 <h4 class="font-light text-xs">Deadline</h4>
                 <p>21 March 2025</p>
               </div>
-              <button class="bg-blue-500 px-4 rounded-lg text-white">Completed</button>
+              <button class="bg-blue-500 px-4 rounded-lg text-white cursor-pointer">Completed</button>
             </div>
           </div>
         </div>
       </div>
       <div class="  w-72  bg-slate-100 rounded-xl">
         <div class="flex justify-center items-center mt-4 gap-3">
-          <img src="./assets/activity.png" alt="">
+          <img class="w-4 h-4 object-cover" src="./assets/activity.png" alt="">
           <span>Activity Log</span>
         </div>
         <div class="flex justify-center items-center discover pb-3">
-          <button class="bg-blue-500 px-3 py-2 rounded-lg text-white mt-4  ">Clear History</button>
+          <button id="clear-btn" class="bg-blue-500 px-3 py-2 rounded-lg text-white mt-4 cursor-pointer ">Clear History</button>
         </div>
-        <div class="px-5 mt-4 ">
+        <div id="history" class="px-5 mt-4 ">
           <p class=" font-light text-sm bg-slate-200 py-3 px-2 rounded-lg mb-4">You have Complete The Task Add Dark Mode
             at 12:48:15 PM</p>
           <p class=" font-light text-sm bg-slate-200 py-3 px-2 rounded-lg mb-4">You have Complete The Task Add Dark Mode
